@@ -1,38 +1,86 @@
-.App {
-  text-align: center;
+
+header{
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 65px;
+  height: 193px;
+  border-bottom: 1px solid #E5E5E5 ;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+header h1{
+  font-size: 48px;
+  
+}
+header div{
+  color: #5C48D3;
+  font-size: 55px;
+  display: flex;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.launch-container{
+  height: 80vh;
+  max-width: 853px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 30px;
+  margin: auto;
+  padding: 30px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.button-launcher-wrapper{
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  align-items: center;
+  gap: 50px;
+}
+
+.button-launcher-wrapper div{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 71px;
+
+}
+
+.button-launcher-wrapper div button{
+  height: 70px;
+  width: 120px;
+  border-radius: 6px;
+  font-size: 36px;
+}
+
+.deactivated{
+  color: #5C48D3;
+  background-color: white;
+
+}
+
+.activated{
+  color:white;
+  background-color:  #5C48D3;
+
+}
+
+.takeoff-control{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 48px;
+  width: 250px;
+  height: 145px;
+  border-radius: 6px;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
-}
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+footer{
+  height: 80px;
+  font-size: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
 }
